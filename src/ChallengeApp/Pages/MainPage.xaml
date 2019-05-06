@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChallengeApp.Pages.MainPage"
+             xmlns:vm="clr-namespace:ChallengeApp.ViewModels">
+    <!--<ContentPage.BindingContext>
+        <vm:MainViewModel />
+    </ContentPage.BindingContext>-->
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Text="{Binding Answer}" />
+            <Button Text="Check Answer" Command="{Binding CheckAnswerCommand}" />
+            <Label Text="{Binding Score}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
